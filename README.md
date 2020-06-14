@@ -24,26 +24,27 @@
 
 
 ### 手动安装
-1. 将项目`Demo`中的文件夹`JRDropMenu`拖入到所需项目中.
-1. 在你的项目的 `.pch` 全局宏定义文件中添加
+### 1. 将项目`Demo`中的文件夹`JRDropMenu`拖入到所需项目中.
+### 2. 在你的项目的 `.pch` 全局宏定义文件中添加
 ```objective-c
 #import "JRGlobalMacro.h"
 ```
 
 ## 正式开始使用
-1. 在你的`ViewController`视图控制器文件中添加
+### 1. 在你的`ViewController`视图控制器文件中添加
 ```objective-c
 #import "JRDropMenuView.h"
 ```
-2. 创建视图`JRDropMenuView`
+### 2. 创建视图`JRDropMenuView`
 ```objective-c
 self.menuView = [[JRDropMenuView alloc] initWithFrame:CGRectMake(00, 88, [UIScreen mainScreen].bounds.size.width, 44)];
 self.menuView.delegate = self;
 [self.menuView createJRDropMenuViewWithOption:[self option]];
 [self.view addSubview:self.menuView];
 ```
-3. JRCategory需包含JRTitle和JRList属性完成一列下拉菜单的配置
-### JRCategory -> JRTitle + JRList =  JROption
+### 3. JRCategory需包含JRTitle和JRList属性完成一列下拉菜单的配置
+> JRCategory -> JRTitle + JRList =  JROption
+
 ```
 - (JROption *)option
 {
@@ -61,8 +62,8 @@ self.menuView.delegate = self;
    return option;
 }
 ```
-4. 自定义标题和列表属性
-### 根据JROption,JRTitle和JRList的头文件来选择需要自定义的属性,使用点语法即可轻松完成配置
+### 4. 自定义标题和列表属性
+> 根据JROption,JRTitle和JRList的头文件来选择需要自定义的属性,使用点语法即可轻松完成配置
 ```
 JROption * option = JROption.new
 .categoryArrSet(@[
@@ -85,8 +86,8 @@ JROption * option = JROption.new
 .showIndicatorSet(NO);
 return option;
 ```
-5. 移除视图
-### 在即将离开视图时需调用dissmiss方法,并关闭动画
+### 5. 移除视图
+> 在即将离开视图时需调用dissmiss方法,并关闭动画
 ```
 -(void)viewWillDisappear:(BOOL)animated
 {
@@ -99,7 +100,7 @@ return option;
 
 ### 获取点击事件结果
 
-  可通过给 JRDropMenuView 示例对象设置代理方法,来实现监听用户的点击事件
+> 可通过给 JRDropMenuView 示例对象设置代理方法,来实现监听用户的点击事件
   
   ```
   - (void)jrDropMenuView:(JRDropMenuView *)jrDropMenuView ResultArr:(NSMutableArray <JRDropMenuItemModel *>*)resultArr;
