@@ -6,11 +6,11 @@
 ## 真机美图
 | 单列表 | 标题有前缀 | 默认选中项 |
 | :----:  | :----: | :----: |
-| ![image1](https://raw.githubusercontent.com/AAChartModel/loadHtmlCssJsDemo-master/master/AAChartKit/BeautyAppreciation/ColumnChart.png) | ![image1](https://raw.githubusercontent.com/AAChartModel/loadHtmlCssJsDemo-master/master/AAChartKit/BeautyAppreciation/BarChart.png) | ![image1](https://raw.githubusercontent.com/AAChartModel/loadHtmlCssJsDemo-master/master/AAChartKit/BeautyAppreciation/AreaChart.png) |
+| ![image1](https://github.com/andy123234/JRDropMenu/blob/master/ScreenShots/9.png) | ![image1](https://github.com/andy123234/JRDropMenu/blob/master/ScreenShots/8.png) | ![image1](https://github.com/andy123234/JRDropMenu/blob/master/ScreenShots/2.png) |
 
 | 自定义标题样式 | 自定义列表样式 | 选中不替换标题Index |
 | :----:  | :----: | :----: |
-| ![image1](https://raw.githubusercontent.com/AAChartModel/loadHtmlCssJsDemo-master/master/AAChartKit/BeautyAppreciation/LineChart.png) | ![image1](https://raw.githubusercontent.com/AAChartModel/loadHtmlCssJsDemo-master/master/AAChartKit/BeautyAppreciation/StepAreaChart.png) | ![image1](https://raw.githubusercontent.com/AAChartModel/loadHtmlCssJsDemo-master/master/AAChartKit/BeautyAppreciation/StepLineChart.png) |
+| ![image1](https://github.com/andy123234/JRDropMenu/blob/master/ScreenShots/1.png) | ![image1](https://github.com/andy123234/JRDropMenu/blob/master/ScreenShots/6.png) | ![image1](https://github.com/andy123234/JRDropMenu/blob/master/ScreenShots/10.png) |
 
 ## 使用前安装
 
