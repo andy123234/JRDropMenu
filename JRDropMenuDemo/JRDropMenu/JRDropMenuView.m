@@ -91,8 +91,7 @@ static float titleHeight;
     }
     
     [self setupTitleStackView];//配置标题stackView
-    [self setupTableView];//配置tableview
-
+    
 }
 - (void)setupTitleStackView
 {
@@ -121,11 +120,17 @@ static float titleHeight;
 }
 - (void)setupTableView
 {
-    [[UIApplication sharedApplication].keyWindow addSubview:self.maskBgView];
-    [[UIApplication sharedApplication].keyWindow addSubview:self.listTable];
+    if (self.maskBgView.superview == nil) {
+        [[UIApplication sharedApplication].keyWindow addSubview:self.maskBgView];
+    }
+    if (self.listTable.superview == nil) {
+        [[UIApplication sharedApplication].keyWindow addSubview:self.listTable];
+    }
 }
 - (void)show
 {
+    [self setupTableView];//配置tableview
+    
     if (self.bottomIndicator.isHidden) {
         self.bottomIndicator.hidden = NO;
         self.bottomIndicator.frame = CGRectMake(_curIndex * titleWidth + 10, titleHeight - 1 - self.jrOption.indicatorHeight, titleWidth - 20, self.jrOption.indicatorHeight);
@@ -288,7 +293,8 @@ static float titleHeight;
         _listTable.dataSource = self;
         _listTable.delegate = self;
         _listTable.showsVerticalScrollIndicator = NO;
-        [_listTable registerNib:[UINib nibWithNibName:NSStringFromClass([JRDropMenuCell class]) bundle:nil]forCellReuseIdentifier: NSStringFromClass([JRDropMenuCell class])];
+        NSBundle * bundle = [NSBundle bundleForClass:[JRDropMenuCell class]];
+        [_listTable registerNib:[UINib nibWithNibName:NSStringFromClass([JRDropMenuCell class]) bundle:bundle]forCellReuseIdentifier: NSStringFromClass([JRDropMenuCell class])];
     }
     return _listTable;
 }

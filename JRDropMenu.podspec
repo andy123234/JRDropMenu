@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = 'JRDropMenu'
-    s.version      = '1.0.0'
+    s.version      = '1.0.3'
     s.summary      = 'JRDropMenu是一款可高自定义的声明式下拉菜单控件'
     s.description  = <<-DESC
 ***
@@ -18,7 +18,8 @@ Pod::Spec.new do |s|
     s.source       = {:git => 'https://github.com/andy123234/JRDropMenu.git', :tag => s.version}
     s.social_media_url = 'https://github.com/andy123234/JRDropMenu'
     s.source_files = 'JRDropMenuDemo/JRDropMenu/*.{h,m}'
-    #s.resource_bundles    = { 'AAChartKitLib' => 'AAChartKitLib/AAJSFiles.bundle' }
+    s.resources = 'JRDropMenuDemo/JRDropMenu/*.xib','JRDropMenuDemo/*.xcassets'
+    s.resource_bundles    = { 'JRDropMenuDemo' => 'JRDropMenuDemo/JRDropMenu/JRDropMenuBundle.bundle' }
     s.prefix_header_contents = '#import "JRGlobalMacro.h"'
     s.requires_arc = true
     s.ios.frameworks = 'UIKit'

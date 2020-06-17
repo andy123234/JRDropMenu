@@ -83,7 +83,7 @@
 {
     if (!_arrowImg) {
         _arrowImg = [UIImageView new];
-        _arrowImg.image = [[UIImage imageNamed:@"down_arrow"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+        _arrowImg.image = [UIImage imageNamed:@"down_arrow"];
     }
     return _arrowImg;
 }

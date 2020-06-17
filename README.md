@@ -14,20 +14,12 @@
 
 ## 使用前安装
 
-### CocoaPods 安装 (推荐)
-1. 在 `Podfile` 中添加以下内容
- ```ruby
- pod 'JRDropMenu', :git => 'https://github.com/andy123234/JRDropMenu.git'
- ```
-
-2. 执行  `pod install`  或  `pod update`。
-
-
 ### 手动安装
-### 1. 将项目`Demo`中的文件夹`JRDropMenu`拖入到所需项目中.
-### 2. 在你的项目的 `.pch` 全局宏定义文件中添加
+1. 将项目`Demo`中的文件夹`JRDropMenu`拖入到所需项目中.
+2. 在你的项目的 `.pch` 全局宏定义文件中添加
+
 ```objective-c
-#import "JRGlobalMacro.h"
+#import "JRDropMenuView.h"
 ```
 
 ## 正式开始使用

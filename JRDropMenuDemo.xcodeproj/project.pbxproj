@@ -24,6 +24,7 @@
 		3D66F7002484B18E00E7EF78 /* JRDropMenuItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D66F6FF2484B18E00E7EF78 /* JRDropMenuItemModel.m */; };
 		3D66F7072484B4E300E7EF78 /* JRDropMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D66F7052484B4E300E7EF78 /* JRDropMenuCell.m */; };
 		3D66F7082484B4E300E7EF78 /* JRDropMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D66F7062484B4E300E7EF78 /* JRDropMenuCell.xib */; };
+		3D68BB66249A08F9006D0203 /* JRDropAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D68BB65249A08F9006D0203 /* JRDropAssets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		3D66F7042484B4E300E7EF78 /* JRDropMenuCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRDropMenuCell.h; sourceTree = "<group>"; };
 		3D66F7052484B4E300E7EF78 /* JRDropMenuCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRDropMenuCell.m; sourceTree = "<group>"; };
 		3D66F7062484B4E300E7EF78 /* JRDropMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JRDropMenuCell.xib; sourceTree = "<group>"; };
+		3D68BB65249A08F9006D0203 /* JRDropAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = JRDropAssets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				3D2391D324932FA500392A4E /* JRList.h */,
 				3D2391D424932FA500392A4E /* JRList.m */,
 				3D2391CC2493232600392A4E /* JRGlobalMacro.h */,
+				3D68BB65249A08F9006D0203 /* JRDropAssets.xcassets */,
 			);
 			path = JRDropMenu;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				3D66F7082484B4E300E7EF78 /* JRDropMenuCell.xib in Resources */,
 				3D66F6EB2484AB4200E7EF78 /* Assets.xcassets in Resources */,
 				3D66F6E92484AB4000E7EF78 /* Main.storyboard in Resources */,
+				3D68BB66249A08F9006D0203 /* JRDropAssets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
