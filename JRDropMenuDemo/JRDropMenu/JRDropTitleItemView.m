@@ -42,7 +42,7 @@
             _titleLabel.center = CGPointMake(_title.titleGap + _titleLabel.frame.size.width/2, CGRectGetMidY(self.frame));
             break;
         case TitleAlignmentRight:
-            _titleLabel.center = CGPointMake(CGRectGetMaxX(self.frame) - _titleLabel.frame.size.width/2 - _title.titleGap, CGRectGetMidY(self.frame));
+            _titleLabel.center = CGPointMake(CGRectGetMaxX(self.frame) - _titleLabel.frame.size.width/2 - _title.titleGap - 13, CGRectGetMidY(self.frame));
             break;
             
         default:
