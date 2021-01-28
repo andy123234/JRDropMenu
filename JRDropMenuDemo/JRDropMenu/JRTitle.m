@@ -26,6 +26,8 @@
         _changeTitleStyle = ChangeTitleStyleAlways;
         _preTitleStr = @"";
         _defaultIndex = 0;
+        _titleAlignment = TitleAlignmentCenter;
+        _titleGap = 5;
     }
     return self;
 }
@@ -42,5 +44,9 @@ JRPropSetFuncImplementation(JRTitle, NSString *, titleName);
 JRPropSetFuncImplementation(JRTitle, ChangeTitleStyle , changeTitleStyle);
 JRPropSetFuncImplementation(JRTitle, NSString *, preTitleStr);
 JRPropSetFuncImplementation(JRTitle, NSInteger , defaultIndex);
+JRPropSetFuncImplementation(JRTitle, TitleAlignment , titleAlignment);
+JRPropSetFuncImplementation(JRTitle, NSInteger , titleGap);
+
+
 
 @end

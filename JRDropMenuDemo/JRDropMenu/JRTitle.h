@@ -17,6 +17,11 @@ typedef NS_ENUM(NSUInteger, ChangeTitleStyle) {
     ChangeTitleStyleNever,   //不替换标题为选项
     ChangeTitleStyleCustom,  //自定义选项是否需要替换标题
 };
+typedef NS_ENUM(NSUInteger, TitleAlignment) {
+    TitleAlignmentCenter,  //居中对齐
+    TitleAlignmentLeft,   //居左对齐
+    TitleAlignmentRight,  //居右对齐
+};
 
 @interface JRTitle : NSObject
 
@@ -55,6 +60,12 @@ JRPropStatementAndPropSetFuncStatement(copy, JRTitle, NSString * , preTitleStr);
 
 /// 默认选中
 JRPropStatementAndPropSetFuncStatement(assign  , JRTitle, NSInteger , defaultIndex);
+
+/// 对齐方式
+JRPropStatementAndPropSetFuncStatement(assign  , JRTitle, TitleAlignment , titleAlignment);
+
+/// 对齐边距,仅在对齐方式不为TitleAlignmentCenter时生效
+JRPropStatementAndPropSetFuncStatement(assign  , JRTitle, NSInteger , titleGap);
 
 @end
 

@@ -134,6 +134,7 @@
                                   .titleNormalTintColorSet([UIColor whiteColor])
                                   .titleNormalFontSet([UIFont systemFontOfSize:12])
                                   .titleNormalBgColorSet([UIColor colorWithRed:6/255.0 green:26/255.0 blue:52/255.0 alpha:.8])
+                                  .titleAlignmentSet(TitleAlignmentLeft)
                                   )
                         .listSet(JRList.new
                                  .listArrSet(@[@"ALL",@"PHP",@"OC",@"Swift",@"Java",@"JavaScript"])

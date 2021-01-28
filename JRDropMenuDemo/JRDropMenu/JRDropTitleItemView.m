@@ -34,7 +34,21 @@
         _titleLabel.text = [NSString stringWithFormat:@"%@%@",self.title.preTitleStr,text];
     }
     [_titleLabel sizeToFit];
-    _titleLabel.center = CGPointMake(CGRectGetMidX(self.frame) - self.frame.origin.x, CGRectGetMidY(self.frame));
+    switch (_title.titleAlignment) {
+        case TitleAlignmentCenter:
+            _titleLabel.center = CGPointMake(CGRectGetMidX(self.frame) - self.frame.origin.x, CGRectGetMidY(self.frame));
+            break;
+        case TitleAlignmentLeft:
+            _titleLabel.center = CGPointMake(_title.titleGap + _titleLabel.frame.size.width/2, CGRectGetMidY(self.frame));
+            break;
+        case TitleAlignmentRight:
+            _titleLabel.center = CGPointMake(CGRectGetMaxX(self.frame) - _titleLabel.frame.size.width/2 - _title.titleGap, CGRectGetMidY(self.frame));
+            break;
+            
+        default:
+            break;
+    }
+    
     
     _arrowImg.frame = CGRectMake(CGRectGetMaxX(_titleLabel.frame) + 5, CGRectGetMidY(self.frame) - 3, 8, 6);
     [self layoutIfNeeded];
